@@ -21,7 +21,7 @@ const errorMap = {
 
 const urlRegExp = new RegExp(
   // eslint-disable-next-line no-useless-escape
-  /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/gi
+  /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/gi,
 );
 
 const validate = ({ storybookUrl }) => {
@@ -74,7 +74,7 @@ export const AddProject = () => {
           setSubmitting(false);
         });
     },
-    [openSuccessAlert, openFailedAlert]
+    [openSuccessAlert, openFailedAlert],
   );
 
   return (
@@ -119,17 +119,15 @@ export const AddProject = () => {
                 onBlur={handleBlur}
                 value={values.storybookUrl}
               />
-              {touched.storybookUrl && errors.storybookUrl && (
-                <Text color="red" mt={2}>
-                  {errors.storybookUrl}
-                </Text>
-              )}
+              <FormErrorMessage color="red.600" mt={2}>
+                {errors.storybookUrl}
+              </FormErrorMessage>
             </FormControl>
             <Button
               type="submit"
               fontWeight="bold"
               fontSize="md"
-              colorScheme="blue"
+              colorScheme="brand"
               size="lg"
               isLoading={isSubmitting}
             >

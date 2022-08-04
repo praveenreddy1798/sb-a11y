@@ -24,16 +24,19 @@ export const Footer = () => (
             as="a"
             href="https://www.linkedin.com/company/74529112/"
             icon={<FaLinkedin fontSize="1.25rem" />}
+            aria-label="LinkedIn"
           />
           <IconButton
             as="a"
             href="https://github.com/storybookjs/"
             icon={<FaGithub fontSize="1.25rem" />}
+            aria-label="GitHub"
           />
           <IconButton
             as="a"
             href="https://twitter.com/storybookjs/"
             icon={<FaTwitter fontSize="1.25rem" />}
+            aria-label="Twitter"
           />
         </ButtonGroup>
       </Stack>
