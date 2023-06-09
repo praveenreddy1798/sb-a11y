@@ -1,0 +1,176 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components/AddProject Default smoke-test 1`] = `
+Object {
+  "checked": undefined,
+  "children": Array [
+    Object {
+      "checked": undefined,
+      "children": undefined,
+      "name": "Storybook URL",
+      "pressed": undefined,
+      "role": "text",
+      "value": undefined,
+    },
+    Object {
+      "checked": undefined,
+      "children": undefined,
+      "invalid": "true",
+      "name": "Storybook URL",
+      "pressed": undefined,
+      "required": true,
+      "role": "textbox",
+      "value": undefined,
+    },
+    Object {
+      "checked": undefined,
+      "children": undefined,
+      "name": "Import",
+      "pressed": undefined,
+      "role": "button",
+      "value": undefined,
+    },
+  ],
+  "name": "components-addproject--default",
+  "pressed": undefined,
+  "role": "WebArea",
+  "value": undefined,
+}
+`;
+
+exports[`Components/AddProject SubmitFailed play-test 1`] = `
+Object {
+  "checked": undefined,
+  "children": Array [
+    Object {
+      "checked": undefined,
+      "children": undefined,
+      "name": "Storybook URL",
+      "pressed": undefined,
+      "role": "text",
+      "value": undefined,
+    },
+    Object {
+      "checked": undefined,
+      "children": undefined,
+      "name": "Storybook URL",
+      "pressed": undefined,
+      "required": true,
+      "role": "textbox",
+      "value": "my-storybook.com",
+    },
+    Object {
+      "checked": undefined,
+      "children": undefined,
+      "name": "Import",
+      "pressed": undefined,
+      "role": "button",
+      "value": undefined,
+    },
+    Object {
+      "checked": undefined,
+      "children": undefined,
+      "name": "Something went wrong. Unable to add this project.",
+      "pressed": undefined,
+      "role": "text",
+      "value": undefined,
+    },
+    Object {
+      "checked": undefined,
+      "children": undefined,
+      "name": "Close",
+      "pressed": undefined,
+      "role": "button",
+      "value": undefined,
+    },
+  ],
+  "name": "components-addproject--submit-failed",
+  "pressed": undefined,
+  "role": "WebArea",
+  "value": undefined,
+}
+`;
+
+exports[`Components/AddProject SubmitSuccess play-test 1`] = `
+Object {
+  "checked": undefined,
+  "children": Array [
+    Object {
+      "checked": undefined,
+      "children": undefined,
+      "name": "Storybook URL",
+      "pressed": undefined,
+      "role": "text",
+      "value": undefined,
+    },
+    Object {
+      "checked": undefined,
+      "children": undefined,
+      "name": "Storybook URL",
+      "pressed": undefined,
+      "required": true,
+      "role": "textbox",
+      "value": "my-storybook.com",
+    },
+    Object {
+      "checked": undefined,
+      "children": undefined,
+      "name": "Import",
+      "pressed": undefined,
+      "role": "button",
+      "value": undefined,
+    },
+  ],
+  "name": "components-addproject--submit-success",
+  "pressed": undefined,
+  "role": "WebArea",
+  "value": undefined,
+}
+`;
+
+exports[`Components/AddProject UrlValidationError play-test 1`] = `
+Object {
+  "checked": undefined,
+  "children": Array [
+    Object {
+      "checked": undefined,
+      "children": undefined,
+      "name": "Storybook URL",
+      "pressed": undefined,
+      "role": "text",
+      "value": undefined,
+    },
+    Object {
+      "checked": undefined,
+      "children": undefined,
+      "description": "Please enter a correctly formatted URL",
+      "invalid": "true",
+      "name": "Storybook URL",
+      "pressed": undefined,
+      "required": true,
+      "role": "textbox",
+      "value": "my-storybook",
+    },
+    Object {
+      "checked": undefined,
+      "children": undefined,
+      "name": "Please enter a correctly formatted URL",
+      "pressed": undefined,
+      "role": "text",
+      "value": undefined,
+    },
+    Object {
+      "checked": undefined,
+      "children": undefined,
+      "name": "Import",
+      "pressed": undefined,
+      "role": "button",
+      "value": undefined,
+    },
+  ],
+  "name": "components-addproject--url-validation-error",
+  "pressed": undefined,
+  "role": "WebArea",
+  "value": undefined,
+}
+`;

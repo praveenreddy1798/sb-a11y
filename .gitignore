@@ -11,6 +11,8 @@
 # production
 /build
 
+/storybook-static
+
 # misc
 .DS_Store
 .env.local
@@ -23,3 +25,4 @@ yarn-debug.log*
 yarn-error.log*
 
 build-storybook.log
+

@@ -1,13 +1,22 @@
 const { injectAxe, checkA11y } = require('axe-playwright');
 
+/*
+ * @see https://storybook.js.org/docs/react/writing-tests/test-runner#test-hook-api-experimental
+ * to learn more about the test-runner hooks API.
+ */
 module.exports = {
-  preRender: async (page) => {
+  async preRender(page) {
     await injectAxe(page);
   },
-  postRender: async (page) => {
-    await checkA11y(page, '#root', {
+  async postRender(page) {
+    await checkA11y(page, '#storybook-root', {
       detailedReport: true,
-      detailedReportOptions: { html: true },
+      detailedReportOptions: {
+        html: true,
+      },
     });
+
+    const accessibilityTree = await page.accessibility.snapshot();
+    expect(accessibilityTree).toMatchSnapshot();
   },
 };

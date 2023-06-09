@@ -16,6 +16,7 @@ export const Glossary = ({ definitions }) => {
     <VStack spacing={4}>
       <Select
         id="component-type"
+        aria-label="Component type"
         placeholder="Select component type"
         onChange={(e) => {
           setActiveType(definitions[e.target.value]);

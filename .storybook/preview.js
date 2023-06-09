@@ -20,6 +20,11 @@ export const parameters = {
       { name: 'white', value: '#fff' },
     ],
   },
+  // a11y: {
+  //   config: {
+  //     rules: [{ id: 'color-contrast', enabled: false }],
+  //   },
+  // },
 };
 
 export const decorators = [

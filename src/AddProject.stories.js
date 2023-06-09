@@ -20,15 +20,16 @@ export const UrlValidationError = Template.bind({});
 UrlValidationError.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement);
 
-  const urlInput = canvas.getByLabelText(/URL/i);
+  const urlInput = canvas.getByTestId('storybook-url');
   expect(urlInput).toBeRequired();
+  expect(urlInput).toHaveAccessibleName('Storybook URL');
   await userEvent.type(urlInput, 'my-storybook');
   await urlInput.blur();
 
   await waitFor(() => {
     expect(urlInput).toBeInvalid();
     expect(urlInput).toHaveAccessibleDescription(
-      'Please enter a correctly formatted URL',
+      'Please enter a correctly formatted URL'
     );
   });
 };
@@ -62,7 +63,7 @@ SubmitSuccess.parameters = {
         ctx.json({
           id: 83470,
           url: project.storybookUrl,
-        }),
+        })
       );
     }),
   ],
