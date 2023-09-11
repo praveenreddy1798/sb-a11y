@@ -3,7 +3,6 @@ import { rest } from 'msw';
 import { within, userEvent, waitFor } from '@storybook/testing-library';
 import { expect } from '@storybook/jest';
 import { AddProject } from './AddProject';
-
 export default {
   component: AddProject,
   title: 'Components/AddProject',
