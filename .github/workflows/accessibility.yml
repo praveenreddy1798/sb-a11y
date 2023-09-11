@@ -28,7 +28,7 @@ jobs:
   # Run interaction and accessibility tests with Axe
   accessibility-and-interactions:
     runs-on: ubuntu-latest
-    # needs: install-cache
+    needs: install-cache
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
