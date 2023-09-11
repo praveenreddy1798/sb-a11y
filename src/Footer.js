@@ -9,6 +9,8 @@ import * as React from 'react';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { Logo } from './Logo';
 
+// Footer
+
 export const Footer = () => (
   <Container
     maxW="full"
