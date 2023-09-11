@@ -119,7 +119,7 @@ export const AddProject = () => {
                 value={values.storybookUrl}
                 data-testid="storybook-url"
               />
-              <FormErrorMessage color="red" mt={2}>
+              <FormErrorMessage color="red.40" mt={2}>
                 {errors.storybookUrl}
               </FormErrorMessage>
             </FormControl>

@@ -18,4 +18,5 @@ export const Secondary = Template.bind({});
 
 Secondary.args = {
   colorScheme: 'red',
+  // colorScheme: 'red.400',
 };
